@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #333;
+    display: flex;
+}
+
+.sidebar {
+    width: 220px;
+    background: #222222;
+    color: white;
+    height: 100vh;
+    padding: 20px 0;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+.sidebar ul li.active,
+.sidebar ul li:hover {
+    background-color: #4c1d95;
+}
+
+.main-content {
+    padding: 40px;
+    flex-grow: 1;
+}
+
+h1 {
+    color: #c11325;
+    margin-bottom: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+th, td {
+    padding: 16px 20px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background: #ede9fe;
+    color: #2e1065;
+}
+
+.badge {
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.badge.active {
+    background: #4ade80;
+    color: #065f46;
+}
+
+.badge.inactive {
+    background: #f87171;
+    color: #7f1d1d;
+}
