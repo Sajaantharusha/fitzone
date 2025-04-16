@@ -8,7 +8,7 @@ body {
 .sidebar {
     width: 220px;
     background: #222222;
-    color: white;
+    color: rgb(95, 87, 87);
     height: 100vh;
     padding: 20px 0;
 }
