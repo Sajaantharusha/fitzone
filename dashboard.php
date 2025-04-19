@@ -7,5 +7,11 @@ if (!isset($_SESSION['user_id'])) {
 }
 // Include database connection
 include('db/config.php');
+
+//Show unauthorized if the user role is not admin.
+if ($_SESSION['user_role'] != 'admin') {
+    echo "Unauthorized access!";
+    exit();
+}
 ?>
 Hola! Dashboard here!!

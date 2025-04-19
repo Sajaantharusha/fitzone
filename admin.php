@@ -17,10 +17,10 @@
     <div class="main-content">
         <h1>Gym Members</h1>
 
-        <form method="GET">
+        <!-- <form method="GET">
             <input type="text" name="search" placeholder="Search by name or email" value="<?= htmlspecialchars($search) ?>">
             <button type="submit">Search</button>
-        </form>
+        </form> -->
 
         <table>
             <thead>
