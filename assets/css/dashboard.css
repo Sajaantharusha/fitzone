@@ -7,8 +7,8 @@ body {
 
 .sidebar {
     width: 220px;
-    background: #222222;
-    color: rgb(255, 255, 255);
+    background: #222;
+    color: white;
     height: 100vh;
     padding: 20px 0;
 }
@@ -21,6 +21,7 @@ body {
 .sidebar ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .sidebar ul li {
@@ -30,17 +31,54 @@ body {
 
 .sidebar ul li.active,
 .sidebar ul li:hover {
-    background-color: #4c1d95;
+    background-color: #c11325;
 }
 
 .main-content {
     padding: 40px;
     flex-grow: 1;
+    background-color: #333;
+    min-height: 100vh;
 }
 
 h1 {
     color: #c11325;
     margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+form input[type="text"] {
+    padding: 8px 12px;
+    font-size: 16px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus {
+    border-color: #c11325;
+}
+
+form button {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #c11325;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #c11325;
 }
 
 table {
@@ -68,6 +106,7 @@ th {
     border-radius: 20px;
     font-size: 14px;
     font-weight: bold;
+    display: inline-block;
 }
 
 .badge.active {
